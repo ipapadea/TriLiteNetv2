@@ -1,7 +1,6 @@
 # TriLiteNet
 
 
-[TriLiteNet (2).pdf](https://github.com/user-attachments/files/19925314/TriLiteNet.2.pdf)
 
 
 
