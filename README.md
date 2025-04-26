@@ -2,6 +2,7 @@
 
 
 
+<img width="1161" alt="Ảnh màn hình 2025-04-27 lúc 05 00 57" src="https://github.com/user-attachments/assets/b57d9590-b57d-475d-a93f-cfef960f9669" />
 
 
 ## Requirement
