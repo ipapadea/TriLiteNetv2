@@ -1,6 +1,7 @@
 # TriLiteNet
 
 
+[TriLiteNet (2).pdf](https://github.com/user-attachments/files/19925314/TriLiteNet.2.pdf)
 
 
 
@@ -60,14 +61,15 @@ This work would not have been possible without the valuable contributions of the
 ## Citation
 
 ```BibTeX
-@article{che2024twinlitenetplus,
-      title={TwinLiteNetPlus: A Stronger Model for Real-time Drivable Area and Lane Segmentation}, 
-      author={Quang-Huy Che and Duc-Tri Le and Minh-Quan Pham and Vinh-Tiep Nguyen and Duc-Khai Lam},
-      year={2024},
-      eprint={2403.16958},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2403.16958}, 
-}
+@ARTICLE{trilitenet,
+  author={Che, Quang-Huy and Lam, Duc-Khai},
+  journal={IEEE Access}, 
+  title={TriLiteNet: Lightweight Model for Multi-Task Visual Perception}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={50152-50166},
+  doi={10.1109/ACCESS.2025.3552088}}
+
 ```
 
