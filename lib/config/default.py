@@ -53,10 +53,10 @@ _C.LOSS.TK_GAIN = 0.3  # segmentation loss gain
 # DATASET related params
 _C.DATASET = CN(new_allowed=True)
 
-_C.DATASET.DATAROOT = '/home/ceec/huycq/data/bdd100k/images'       # the path of images folder
-_C.DATASET.LABELROOT = '/home/ceec/huycq/data/det_annotations'      # the path of det_annotations folder
-_C.DATASET.MASKROOT = '/home/ceec/huycq/data/bdd_seg_gt'                # the path of da_seg_annotations folder
-_C.DATASET.LANEROOT = '/home/ceec/huycq/data/bdd_lane_gt'               # the path of ll_seg_annotations folderpip in
+_C.DATASET.DATAROOT = '../bdd100k/images'       # the path of images folder
+_C.DATASET.LABELROOT = '../bdd100k/det_annotations'      # the path of det_annotations folder
+_C.DATASET.MASKROOT = '../bdd100k/drivable_area_annotations'                # the path of da_seg_annotations folder
+_C.DATASET.LANEROOT = '../bdd100k/lane_line_annotations'               # the path of ll_seg_annotations folderpip in
 
 
 _C.DATASET.DATASET = 'BddDataset'
