@@ -46,6 +46,22 @@ We recommend the dataset directory structure to be the following:
 
 Update the your dataset path in the `lib/config/default.py`.
 
+## Training
+
+```shell
+python tools/train.py --config '{nano/small/medium/large}'
+```
+## Evaluation
+
+```shell
+python tools/test.py --config '{tiny/small/base}' --weights 'weights/{tiny/small/base}.pth'
+```
+## Demo
+
+```shell
+python tools/demo.py --config '{tiny/small/base}' --weights 'weights/{tiny/small/base}.pth' --source 'inference/videos/1.mp4' or 'inference/images'
+```
+
 
 ## Acknowledgements
 
