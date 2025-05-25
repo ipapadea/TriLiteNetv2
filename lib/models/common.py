@@ -542,7 +542,8 @@ class Encoder(nn.Module):
                 output2 = layer(output2)
         out_encoder=torch.cat([output2_0, output2], 1)
         
-        return out_encoder,inp1,inp2
+        # return out_encoder,inp1,inp2
+        return [output0_cat, output1_cat, out_encoder],inp1,inp2
 
 class UpSimpleBlock(nn.Module):
     def __init__(self, in_channels, out_channels):
@@ -617,7 +618,7 @@ class DetectHead(nn.Module):
     def forward(self, output_encoder):
 
         output_encoder,_,_=output_encoder
-
+        output_encoder = output_encoder[2]
         out1 = self.cbr1(output_encoder)
         out2 = self.cbr2(out1)
         out2 = self.spp(out2)
@@ -645,8 +646,8 @@ class SegmentHead(nn.Module):
 
     def forward(self, out_encoder):
 
-        out_encoder,inp1,inp2 = out_encoder
-
+        out_encoder,inp1,inp2 = out_encoder # 256,16,16
+        out_encoder=out_encoder[2]
         out_caam = self.caam(out_encoder)
         out_caam=self.conv_caam(out_caam)
 

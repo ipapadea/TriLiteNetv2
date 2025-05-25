@@ -5,7 +5,7 @@ from yacs.config import CfgNode as CN
 _C = CN()
 
 _C.OUT_DIR = 'runs/'
-_C.GPUS = (0,1)     
+_C.GPUS = (0,)
 _C.WORKERS = 24
 _C.PIN_MEMORY = False
 _C.PRINT_FREQ = 20

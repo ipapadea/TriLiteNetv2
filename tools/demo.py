@@ -37,7 +37,7 @@ transform=transforms.Compose([
             normalize,
         ])
 
-
+from torchsummary import summary
 def detect(cfg,opt):
 
     logger, _ = create_logger(
@@ -51,8 +51,11 @@ def detect(cfg,opt):
 
     # Load model
     model = get_net(cfg)
-    checkpoint = torch.load(opt.weights, map_location= device)
-    model.load_state_dict(checkpoint)
+    # checkpoint = torch.load(opt.weights, map_location= device)
+    # model.load_state_dict(checkpoint)
+    total_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    print(f"Total trainable parameters: {total_params:,}")
+
     model = model.to(device)
     if half:
         model.half()  # to FP16
